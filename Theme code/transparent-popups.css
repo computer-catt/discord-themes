@@ -1,11 +1,13 @@
 /*Userprofile backgrounds hiding*/
 .userProfileInner_c69a7b .input_f8bc55, .popoutNoBannerPremium_c3e427,
+:not(aside):not(.customizationSection_b3a5c2)>.biteSizeInnerThemed_c69a7b, 
 :not(aside):not(.customizationSection_b3a5c2)>.userProfileOuterThemed_c69a7b, 
 :not(aside):not(.customizationSection_b3a5c2)>.userProfileOuterUnthemed_c69a7b, 
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInnerThemedWithBanner_c69a7b,
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInnerThemedPremiumWithoutBanner_c69a7b,
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInnerThemedNonPremium_c69a7b,
-:not(aside):not(.customizationSection_b3a5c2)>div>div>.overlayBackground_c69a7b {
+:not(aside):not(.customizationSection_b3a5c2)>div>.fullSizeInnerThemed_c69a7b,
+:not(aside):not(.customizati:not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInnerThemedNonPremium_c69a7b,onSection_b3a5c2)>div>div>.overlayBackground_c69a7b {
     background: none!important;
 }
 .userProfileInnerThemedNonPremium_c69a7b .popoutBanner_c3e427{
@@ -41,11 +43,16 @@
     background: rgba(255, 255, 255, 0.05) !important;
 }
 
+
+.userProfileInner_c69a7b .inner_dc0b43{
+	background: rgb(var(--bg-overlay-color-inverse) / .1);
+}
+
 /*remove background*/
 .container_d0f4b1,.container_b56bbc, .popout_c5b389, .footer_ac90a2, .option_b0286e::after, 
 .focused_eedf95, .badgeList_ec3b75, .root_f9a4c9:not(.modalRoot_ad9cbd), 
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInner_c69a7b:before, 
-.wrapper_e06857, 
+.wrapper_e06857,
 .profileBadges_f89da9, .footer_f9a4c9, .wrapper_ef319f,
 .container_effbe2,.container__33507,
 .channelHeader_f3978e,.messageGroupWrapper_ac90a2,
@@ -56,13 +63,13 @@
 .scroller_d90b3d, .container__d6dad3, .resultsGroup_b0286e,
 .contentWrapper_af5dbb, .emojiPicker_c6ee36, .inspector_c3120f, 
 .header_c6ee36, .modal_cedfaf, .rolePill_fa2f72,  .previewContainer_adbea6,
-.container_f1c3d9,.container_fe1358, .footer_f82cc7, 
+.container_f1c3d9,.container_fe1358, .footer_af82cc7, 
 .reactors_f2bfbb, .scroller_f2bfbb, .list_f20a46, .header_e664f3, .container_acb8b3, .wrapper_efd8e6,
 .header_fa4e6d, .autocomplete_f23da8 .wrapper_ba23fe, .guildSection_e58351,
 .authorize_c5a065, .footer_c5a065, .contentWrapper_ed5743,
 .optionBox_f2f431, .smallDecorationPreviewsContainer_aba31b,
 .decorationPreview_aba31b, .decorationGridItem_b35b54, .vc-notification-root,
-.navButtons_cd377c, paymentModalContent content_cc6017, 
+.navButtons_cd377c, .paymentModalContent .content_cc6017, 
 .guildPopout_cf5d0a .body_cf5d0a,
 .skuSelectModalHeader_f92df2, .skuSelectModalContent_f92df2, 
 .tier2_c87d73, .tier0_c87d73, .body_bf926b, .benefit_a3545a,
@@ -117,13 +124,13 @@
 .root_f9a4c9:has(>.content_cd79c9)  {
     background: transparent!important;
     backdrop-filter: blur(var(--blur-popup));
-
 }
 
 /*blur before*/
 .wrapper_c43059::before,
 :not(.contentWrapper_af5dbb)>#emoji-picker-tab-panel::before,
 .root_f9a4c9:has(>.form_acae5d)::before,
+.rootWithShadow_f9a4c9:not(:has(> .quickswitcher_f4e139)):before,
 #guild-header-popout::before,
 .container_eedf95::before,
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInner_c69a7b:before, 
@@ -294,7 +301,11 @@
     left: 16px;
 }
 /*border radius*/
-.userPopoutOuter_c69a7b, .popout_c5b389, 
+.root_bc9cc2:has(.userProfileOuter_c69a7b){
+	overflow: visible;
+}
+
+.userPopoutOuter_c69a7b, .popout_c5b389,
 .container_eedf95, .messagesPopoutWrap_ac90a2, 
 .menu_d90b3d,.scroller_d90b3d  {
 }
@@ -308,7 +319,7 @@ border-radius: inherit;
 .categoryList_c6ee36 {
     /*border-bottom-left-radius: var(--radius-popup) ;*/
 }
-.userProfileOuter_c69a7b, .root_b9fccc {
+.userProfileOuter_c69a7b, .root_b9fccc,.profileEffects_f867f9 .inner_f867f9 {
     border-radius: var(--radius-popup);
 }
 
@@ -341,9 +352,10 @@ border-radius: inherit;
 .root_b9fccc .svg_c51b4e > circle {
     opacity: 0!important;
 }  
-:not(aside):not(.customizationSection_b3a5c2)>div>div>div>div>svg>foreignObject>.banner_c3e427 {
+:not(aside):not(.customizationSection_b3a5c2)>div>div>div>div>svg>foreignObject>.banner_c3e427,:not(aside):not(.customizationSection_b3a5c2)>svg>foreignObject>.biteSizeBanner_c3e427  {
     background-color: transparent!important;
 }
+.divider_c3e427:before{display:none !important}
 .resultsGroup_b0286e:before, .rolePillBorder_fa2f72,
 .questionInput_f24a96 {
     border: none!important;
