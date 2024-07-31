@@ -50,7 +50,7 @@
 
 /*remove background*/
 .container_d0f4b1,.container_b56bbc, .popout_c5b389, .footer_ac90a2, .option_b0286e::after, 
-.focused_eedf95, .badgeList_ec3b75, .root_f9a4c9:not(.modalRoot_ad9cbd), 
+.focused_eedf95, .badgeList_ec3b75, .root_f9a4c9:not(.modalRoot_d8e2d0), 
 :not(aside):not(.customizationSection_b3a5c2)>div>.userProfileInner_c69a7b:before, 
 .wrapper_e06857,
 .profileBadges_f89da9, .footer_f9a4c9, .wrapper_ef319f,
@@ -65,7 +65,7 @@
 .header_c6ee36, .modal_cedfaf, .rolePill_fa2f72,  .previewContainer_adbea6,
 .container_f1c3d9,.container_fe1358, .footer_af82cc7, 
 .reactors_f2bfbb, .scroller_f2bfbb, .list_f20a46, .header_e664f3, .container_acb8b3, .wrapper_efd8e6,
-.header_fa4e6d, .autocomplete_f23da8 .wrapper_ba23fe, .guildSection_e58351,
+.header_fa4e6d, .autocomplete_bcc24e .wrapper_ba23fe, .guildSection_e58351,
 .authorize_c5a065, .footer_c5a065, .contentWrapper_ed5743,
 .optionBox_f2f431, .smallDecorationPreviewsContainer_aba31b,
 .decorationPreview_aba31b, .decorationGridItem_b35b54, .vc-notification-root,
@@ -110,14 +110,14 @@
 #user-profile-actions, .wrapper_ef319f ,
 .messagesPopoutWrap_ac90a2,.contentWrapper_af5dbb, 
 .quickswitcher_f4e139,.picker_cd703d,
-.autocomplete_f23da8, .streamPreview_adbea6  ,.container_e88961,
+.autocomplete_bcc24e, .streamPreview_adbea6  ,.container_e88961,
 .container_f1c3d9, .container__23c08,
 .focusLock_f9a4c9>.modal_ed23b8,
 .popout_e6af9c, [aria-labelledby]>.root_f9a4c9:not(:has(>[aria-labelledby])) ,
 .uploadModal_f82cc7, .rootWithShadow_f9a4c9:has(>.reactorsContainer_f2bfbb),
 .root_f9a4c9:has(>[id]), .root_f9a4c9:has(>.transitionGroup_ae36eb),
 #manage-multi-account, .container_e664f3, [class^="toast_"],
-.languageSelector_ad9cbd, .recentMentionsPopout_ddb5b4, 
+.languageSelector_d8e2d0, .recentMentionsPopout_ddb5b4, 
 .customColorPicker_bbc020, .root_f9a4c9:has(>div>div>form>.header_f9a4c9),
 .prompt_cd377c, .vc-notification, .guildPopout_cf5d0a, 
 .selectFilterPopout_cfe282, .container_b572de,
@@ -181,7 +181,7 @@
 .rootWithShadow_f9a4c9:has(>.reactorsContainer_f2bfbb)::after,
 .root_f9a4c9:has(>[id])::after, 
 .root_f9a4c9:has(>.transitionGroup_ae36eb)::after, 
-.container_e664f3::after, .languageSelector_ad9cbd::after, 
+.container_e664f3::after, .languageSelector_d8e2d0::after, 
 .recentMentionsPopout_ddb5b4::after, 
 .root_f9a4c9:has(>div>.connectionsContainer_ec99f9)::after,
 .popout_f6639d::after, .customColorPicker_bbc020::after,
@@ -238,7 +238,7 @@
     z-index: -1;
     border-radius: inherit;
 }
-.autocomplete_f23da8::before,.streamPreview_adbea6::before{
+.autocomplete_bcc24e::before,.streamPreview_adbea6::before{
     content: "";
     top: 0;
     left: 0;
